@@ -25,8 +25,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 80px;
+            margin-top: 60px;
             margin-bottom: 80px;
+        }
+        .logo {
+            width: 170px;
+            max-width: 80vw;
+            margin-bottom: 24px;
+            border-radius: 30px;
+            box-shadow: 0 4px 32px 0 rgba(62, 231, 247, 0.13);
+            animation: fadein 1.2s;
         }
         h1 {
             font-size: 3rem;
@@ -40,9 +48,15 @@
             from { transform: translateY(-50px); opacity:0; }
             to   { transform: translateY(0); opacity:1; }
         }
-        .channel-btn {
-            padding: 18px 56px;
-            font-size: 1.3rem;
+        .button-group {
+            display: flex;
+            gap: 26px;
+            margin-bottom: 90px;
+            margin-top: 10px;
+        }
+        .main-btn {
+            padding: 18px 48px;
+            font-size: 1.2rem;
             font-weight: 700;
             color: #fff;
             background: linear-gradient(93deg, #3ee7f7 0%, #2562d7 100%);
@@ -52,14 +66,18 @@
             cursor: pointer;
             text-decoration: none;
             transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
-            margin-bottom: 90px;
-            margin-top: 10px;
             letter-spacing: 1px;
         }
-        .channel-btn:hover {
+        .main-btn.bot {
+            background: linear-gradient(93deg, #36d1c4 0%, #1e77b3 100%);
+        }
+        .main-btn:hover {
             background: linear-gradient(93deg, #2562d7 0%, #3ee7f7 100%);
             transform: translateY(-4px) scale(1.04);
             box-shadow: 0 8px 36px 0 rgba(62,231,247,0.17);
+        }
+        .main-btn.bot:hover {
+            background: linear-gradient(93deg, #1e77b3 0%, #36d1c4 100%);
         }
         .footer {
             position: fixed;
@@ -94,18 +112,24 @@
             vertical-align: middle;
         }
         @media (max-width: 600px) {
-            h1 { font-size: 1.5rem; margin-bottom: 28px;}
-            .channel-btn { font-size: 1rem; padding: 12px 20px; }
+            h1 { font-size: 1.5rem; margin-bottom: 24px;}
+            .logo { width: 110px; }
+            .main-btn { font-size: 1rem; padding: 12px 20px; }
+            .button-group { flex-direction: column; gap: 16px; margin-bottom: 40px;}
             .footer { bottom: 12px; }
             .bot-link { font-size: 1rem; padding: 8px 14px 8px 10px; }
-            .container { margin-top: 30px; margin-bottom: 50px; }
+            .container { margin-top: 18px; margin-bottom: 42px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="/logo.jpg" alt="Infinity Search Logo" class="logo">
         <h1>Бот по пробиву</h1>
-        <a href="https://t.me/infinitysearchfree" class="channel-btn" target="_blank">Канал</a>
+        <div class="button-group">
+            <a href="https://t.me/infinitysearchfree" class="main-btn" target="_blank">Канал</a>
+            <a href="https://t.me/InfinitySearcch_bot" class="main-btn bot" target="_blank">Бот</a>
+        </div>
     </div>
     <div class="footer">
         <a class="bot-link" href="https://t.me/InfinitySearcch_bot" target="_blank">
