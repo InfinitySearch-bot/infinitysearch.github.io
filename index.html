@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бот по пробиву</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        body {
+            background: linear-gradient(135deg, #212121 0%, #383e56 100%);
+            color: #fff;
+            font-family: 'Montserrat', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-top: 60px;
+            margin-bottom: 32px;
+            letter-spacing: 1.2px;
+            text-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        }
+        .channel-btn {
+            padding: 18px 48px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg, #36d1c4 0%, #1655a2 100%);
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 2px 16px rgba(22, 85, 162, 0.18);
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 80px;
+            transition: transform 0.18s, box-shadow 0.18s;
+            display: inline-block;
+        }
+        .channel-btn:hover {
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 6px 32px rgba(54, 209, 196, 0.3);
+            background: linear-gradient(90deg, #1655a2 0%, #36d1c4 100%);
+        }
+        .bot-link {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.87;
+            text-decoration: none;
+            color: #56e0d4;
+            font-weight: 600;
+            gap: 10px;
+        }
+        .bot-link img {
+            width: 26px;
+            height: 26px;
+        }
+        @media (max-width: 500px) {
+            h1 { font-size: 1.4rem; margin-top: 32px;}
+            .channel-btn { font-size: 1rem; padding: 14px 20px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Бот по пробиву</h1>
+    <a href="https://t.me/infinitysearchfree" class="channel-btn" target="_blank">Канал</a>
+    <div style="margin-top: auto;"></div>
+    <a class="bot-link" href="https://t.me/InfinitySearcch_bot" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+        @InfinitySearcch_bot
+    </a>
+</body>
+</html>
